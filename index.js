@@ -2,7 +2,7 @@ const express=require('express')
 const axios =require('axios');
 const cheerio=require('cheerio')
 const { response } = require('express');
-const PORT=8000;
+const PORT=process.env.PORT || 8000;
 
 const app=express()
 const sources=[
